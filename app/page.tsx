@@ -1,8 +1,8 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import TeacherDashboard from "@/components/TeacherDashboard";
-import VocabularyList from "@/components/VocabularyList";
+import TeacherDashboard from "@/Components/TeacherDashboard";
+import VocabularyList from "@/Components/VocabularyList";
 
 export default function App() {
   const [activeTab, setActiveTab] = useState<"list" | "add">("list");
