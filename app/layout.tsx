@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
 
+const inter = Inter({ subsets: ["latin"] });
+
 export const metadata: Metadata = {
-  title: "Vocab & Pronunciation",
-  description: "A modern pronunciation and vocabulary learning application.",
+  title: "ProVocab Educator",
+  description: "Professional vocabulary and pronunciation tool.",
 };
 
 export default function RootLayout({
@@ -12,8 +15,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className="bg-gray-950 text-gray-100 min-h-screen selection:bg-indigo-500/30">
+    <html lang="en">
+      <body className={`${inter.className} bg-slate-50 text-slate-900 min-h-screen selection:bg-indigo-100`}>
         {children}
       </body>
     </html>
